@@ -1,6 +1,3 @@
--- ==============================
--- CATEGORIA
--- ==============================
 INSERT INTO Categoria (nome) VALUES
 ('Bebidas'),
 ('Alimentos'),
@@ -13,9 +10,6 @@ INSERT INTO Categoria (nome) VALUES
 ('Esportes'),
 ('Brinquedos');
 
--- ==============================
--- CLIENTE
--- ==============================
 INSERT INTO Cliente (nome, cpf) VALUES
 ('João Silva', '12345678901'),
 ('Maria Oliveira', '23456789012'),
@@ -28,9 +22,6 @@ INSERT INTO Cliente (nome, cpf) VALUES
 ('Lucas Almeida', '90123456789'),
 ('Patrícia Santos', '01234567890');
 
--- ==============================
--- FABRICANTE
--- ==============================
 INSERT INTO Fabricante (nome) VALUES
 ('Coca-Cola'),
 ('Nestlé'),
@@ -43,9 +34,6 @@ INSERT INTO Fabricante (nome) VALUES
 ('Microsoft'),
 ('Hasbro');
 
--- ==============================
--- FUNCIONARIO
--- ==============================
 INSERT INTO Funcionario (nome, cpf) VALUES
 ('André Carvalho', '11111111111'),
 ('Beatriz Nunes', '22222222222'),
@@ -58,9 +46,6 @@ INSERT INTO Funcionario (nome, cpf) VALUES
 ('Igor Monteiro', '99999999999'),
 ('Jéssica Pinto', '10101010101');
 
--- ==============================
--- PRODUTO
--- ==============================
 INSERT INTO Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) VALUES
 ('Refrigerante 2L', 50, 8.99, '2025-12-31', 1, 1),
 ('Chocolate 100g', 100, 4.50, '2026-01-15', 2, 2),
@@ -73,9 +58,6 @@ INSERT INTO Produto (nome, quantidade, preco, validade, categoria_codigo, fabric
 ('Livro Java Básico', 35, 59.90, '2030-01-01', 8, 9),
 ('Boneco Star Wars', 20, 129.90, '2030-01-01', 10, 10);
 
--- ==============================
--- VENDA
--- ==============================
 INSERT INTO Venda (horario, valorTotal, quantidadeTotal, codigoCliente, codigoFuncionario) VALUES
 ('2025-09-01', 50.00, 5, 1, 1),
 ('2025-09-01', 120.00, 10, 2, 2),
@@ -88,9 +70,6 @@ INSERT INTO Venda (horario, valorTotal, quantidadeTotal, codigoCliente, codigoFu
 ('2025-09-05', 129.90, 1, 9, 9),
 ('2025-09-05', 800.00, 2, 10, 10);
 
--- ==============================
--- ITEMVENDA
--- ==============================
 INSERT INTO ItemVenda (valorTotal, quantidadeParcial, codigoProduto) VALUES
 (17.98, 2, 1),
 (45.00, 10, 2),
