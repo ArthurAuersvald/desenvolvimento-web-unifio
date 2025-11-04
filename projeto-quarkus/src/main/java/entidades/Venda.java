@@ -5,6 +5,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import java.time.LocalDate;
+import java.util.List;
+
+import io.quarkus.panache.common.Sort;
 
 @Entity
 public class Venda {
@@ -22,5 +25,10 @@ public class Venda {
     public Integer codigoCliente;
 
     public Integer codigoFuncionario;
+
+    public static List<Venda> listAll(Sort ascending) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'listAll'");
+    }
 
 }
